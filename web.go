@@ -61,7 +61,7 @@ func form(w http.ResponseWriter,r *http.Request){
 */
 func m(){
 	fmt.Println(time.Now().Format("2006-01-02 15:04:05"))
-	db,err:=sql.Open("mysql","bys:Xuxian0628.@tcp(116.196.72.23:3306)/bysedu")
+	db,err:=sql.Open("mysql","user:passowrd@tcp(127.0.0.1:3306)/bysedu")
 	if err!=nil{
 
 		log.Fatal(err)
