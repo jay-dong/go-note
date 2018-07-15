@@ -1,8 +1,8 @@
 package bank
 var deposits=make(chan int)
 var balances=make(chan int)
-func Desposit(amount int)
-func Balance() int
+func Desposit(amount int){deposits<-amount}
+func Balance() int {return <-balances}
 func teller(){
 
 	var balance int
